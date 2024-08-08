@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function HostVans() {
   const [vans, setVans] = useState([]);
-
+  // Grabbing fake api data from server file
   useEffect(() => {
     fetch("/api/host/vans")
       .then((res) => res.json())
